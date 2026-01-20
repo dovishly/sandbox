@@ -1,3 +1,6 @@
 chronograf/data/
 influxdb/data/
 kapacitor/data/
+.snmp/
+telegraf.d/
+grafana/data/
