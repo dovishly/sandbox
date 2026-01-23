@@ -8,7 +8,7 @@ datasources:
     type: influxdb
     access: proxy
     url: http://influxdb:8086
-    database: power
+    database: arbitraryDB
     user: admin
     password: admin
     isDefault: true

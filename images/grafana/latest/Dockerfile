@@ -1,4 +1,6 @@
-FROM grafana/grafana:12.1.0
+ARG GRAFANA_TAG
+FROM grafana:$GRAFANA_TAG
+
 
 # Disable Login form or not
 ENV GF_AUTH_DISABLE_LOGIN_FORM "true"
