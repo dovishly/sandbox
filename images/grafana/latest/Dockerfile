@@ -1,5 +1,5 @@
-ARG GRAFANA_TAG
-FROM grafana:$GRAFANA_TAG
+# ARG GRAFANA_TAG
+FROM grafana/grafana:12.1.0
 
 
 # Disable Login form or not
@@ -15,5 +15,3 @@ ENV GF_AUTH_ANONYMOUS_ORG_ROLE "Admin"
 ADD ../provisioning /etc/grafana/provisioning
 # Add configuration file
 ADD ../grafana.ini /etc/grafana/grafana.ini
-# Add dashboard json files
-ADD ../dashboards /etc/grafana/dashboards
