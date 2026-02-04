@@ -2,10 +2,10 @@ dbrp "telegraf"."autogen"
 
 stream
     |from()
-        .measurement('cpu')
+        .measurement('mock')
         .groupBy(*)
     |alert()
-        .warn(lambda: "usage_idle" < 20)
-        .crit(lambda: "usage_idle" < 10)
+        .warn(lambda: "constant" < 5)
+        .crit(lambda: "constant" > 5)
         // Send alerts to the `cpu` topic
-        .topic('cpu')
+        .topic('mock')

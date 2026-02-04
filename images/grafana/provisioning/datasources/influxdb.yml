@@ -8,8 +8,8 @@ datasources:
     type: influxdb
     access: proxy
     url: http://influxdb:8086
-    database: arbitraryDB
-    user: admin
-    password: admin
+    database: telegraf
+    user: ""
+    password: ""
     isDefault: true
     editable: true
