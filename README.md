@@ -61,4 +61,4 @@ After entering the Kapcitor container, use `kapacitor watch <task_name>` to moni
 #### Grafana
 Place dashboards under `/grafana/dashboards` sandbox directory. Grafana will update the list of dashboards every 5 seconds, just refresh the page.
 #### InfluxDB
-Working on filling influx with sample data.
+Sample data needs to be made
